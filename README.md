@@ -1,192 +1,101 @@
-# 📘 Assignment: Practice React Props
+React Props Practice:
+Overview:
 
-In this assignment, we will create a small React project to practice how props work.
+This project was developed as a practice exercise to strengthen understanding of React props and their role in building reusable and dynamic components. The focus was on creating modular components
+passing data through props, and demonstrating variations in component rendering.
 
-What are Props?
-⚡ Props (_short for properties_) allow us to pass data from one component to another and make our components reusable.
+Objectives:
 
-📝 Task
+Learn how to pass and utilize props in React.
 
-1. 🛠️ Create a new React app using create-react-app or Vite.
-2. 🧩 Create at least 3 reusable components (for example: `Card`, `Button`, `UserProfile`).
-3. 📥 Use props to pass data into these components. Examples:
+Create multiple reusable components that can adapt based on prop values.
 
-   - 👤 Pass a user’s name and age to a `UserProfile` component.
-   - 🔘 Pass text and color to a `Button` component.
-   - 📄 Pass title and description to a `Card` component.
+Apply basic styling for a clean and structured user interface.
 
-4. 🎨 Display at least 3 different variations of each component by changing props.
-5. 💅 Add some simple CSS for better UI.
+Deploy the project to GitHub Pages for live access.
 
-✅ Requirements
+Project Features:
 
-- 📌 Your project should have at least 3 components using props.
-- 🧹 Code must be clean and readable.
-- 🌐 Push your project to GitHub and share the repo link.
+Reusable Components
 
-# 📖 Solution: Project Description – Props Practice in React
+Button Component:
 
-🎯 Objective
+Accepts text and color as props.
 
-The goal of this assignment was to practice using props in React by creating reusable components. Props allow us to pass data from one component to another, making our components dynamic and reusable.
+Renders customizable buttons with styled backgrounds.
 
-🛠️ Steps I Followed
+UserProfile Component:
 
-1. Created a New React Project
+Accepts name, age, and hobby as props.
 
-I used Vite (faster and modern alternative to Create React App) to set up the React environment:
+Displays user details in a structured layout.
 
-npm create vite@latest props-practice
-cd props-practice
-npm install
-npm run dev
+Card Component:
 
-This gave me a fresh React project running locally at `http://localhost:5173`.
+Accepts title and description as props.
 
-2. Created Reusable Components
+Renders a card element containing content information.
 
-Inside the `src/components/` folder, I created three components:
+Dynamic Rendering
 
-a:) Button.jsx
+Each component was displayed in multiple variations by modifying prop values.
 
-- Props: `text`, `color`
-- Displays a styled button with customizable text and background color.
+Example:
 
-b:) UserProfile.jsx
+Buttons: “Click Me” (blue), “Delete” (red), “Submit” (green)
 
-- Props: `name`, `age`, `hobby`
-- Displays user details inside a card-like box.
+User Profiles: Atif (22, Coding), Usman (23, Movie Directing), Aroona (22, Writing)
 
-c:) Card.jsx
+Cards: React Basics, Advanced React, Frontend Tools
 
-- Props: `title`, `description`
-- Displays a content card with a title and description.
+Styling:
 
-3. Used Props in App.jsx
+Clean, minimal CSS applied for consistent spacing, borders, and layout alignment.
 
-In `App.jsx`, I imported the three components and displayed three different variations of each one by changing their props:
+Components styled for readability and presentation.
 
-- Buttons: “Click Me” (blue), “Delete” (red), “Submit” (green)
-- User Profiles: Atif (22, Coding), Usman (23, Movie Directing), Aroona (22, Writing)
-- Cards: React Basics, Advanced React, Frontend Tools
+Code Structure:
 
-This demonstrated how props make components reusable with different data.
+Components stored in a dedicated components folder.
 
-4. Added Simple CSS
+Code written with readability, modularity, and reusability in mind.
 
-I styled each component using inline CSS for simplicity:
+Technologies Used:
 
-- Buttons have custom background colors and rounded corners.
-- User profiles and cards have borders, padding, and spacing for a neat layout.
+React (Vite) → for component-based UI development.
 
-This made the UI cleaner and more readable.
+JavaScript (ES6+) → for logic implementation.
 
-5. Code Organization
+CSS → for styling and layout.
 
-- Components are kept in separate files for clean code.
-- Props are passed in a simple, clear way to make the code easy to understand.
-- Each component is reusable and independent.
+GitHub Pages → for deployment and hosting.
 
-# 🚀 Deploying Vite + React App to GitHub Pages
+Deployment:
+Steps Followed
 
-This guide explains how to deploy this project to GitHub Pages.
+Installed the gh-pages package.
 
-🔹 1. Install `gh-pages`
+Configured vite.config.js with the repository base path.
 
-Inside your project, install the `gh-pages` package:
+Added predeploy and deploy scripts to package.json.
 
-npm install gh-pages --save-dev
+Built the project with npm run build.
 
-🔹 2. Configure `vite.config.js`
+Deployed using npm run deploy, which published the production build to the gh-pages branch.
 
-Edit your `vite.config.js` file and add the `base` option with your repo name:
+Configured GitHub Pages settings to serve the project from the gh-pages branch.
 
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+Key Learnings:
 
-// https://vitejs.dev/config/
-export default defineConfig({
-plugins: [react()],
-base: "/ use your repo name here/",
-});
+How props enable data-driven rendering in React.
 
-🔹 3. Update `package.json` Scripts
+Building modular components that adapt to different use cases.
 
-In your `package.json`, add `predeploy` and `deploy` scripts:
+Structuring React projects for clarity and maintainability.
 
-"scripts": {
-"dev": "vite",
-"build": "vite build",
-"preview": "vite preview",
-"predeploy": "npm run build",
-"deploy": "gh-pages -d dist"
-}
+Configuring and deploying React applications to GitHub Pages.
 
-👉 (Optional but recommended) Also add a `homepage` field:
-
-"homepage": "https://github.com/Atif-Ali14/Props-Practice"
-
-Like this:
-
-{
-"name": "props-practice",
-"private": true,
-"version": "0.0.0",
-"homepage": "https://github.com/Atif-Ali14/Props-Practice",
-"type": "module",
-"scripts": {
-"dev": "vite",
-"build": "vite build",
-"preview": "vite preview",
-"predeploy": "npm run build",
-"deploy": "gh-pages -d dist"
-}
-}
-
-🔹 4. Build the Project
-
-Run this command inside in your project folder:
-
-npm run build
-
-This creates a `dist/` folder with the production build.
-
-🔹 5. Deploy to GitHub Pages
-
-Run this command inside in your project folder:
-
-npm run deploy
-
-This will push the contents of the `dist/` folder to a branch called `gh-pages`.
-
-🔹 6. Enable GitHub Pages
-
-1. Go to your repo on GitHub:
-   👉 [Props-Practice-in-React Settings](https://github.com/easy2-code/Props-Practice-in-React/settings/pages)
-2. Navigate to Settings → Pages
-3. Under Source, select:
-
-   - Branch: `gh-pages`
-   - Folder: `/ (root)`
-   - Click Save
-
-🔹 7. Access Your Live App
-
-After a few minutes, your app will be available at:
-
-👉 https://github.com/Atif-Ali14/Props-Practice/ 🎉
-
-✅ Notes
-
-- If the page doesn’t load immediately, wait 2–5 minutes (GitHub Pages takes time).
-- Clear browser cache if you see an old version.
-- Always re-run:
-
-  npm run build
-  npm run deploy
-
-# ✍️ Submitted By:
+Author"
 
 Atif Ali
-I have completed this assignment with honesty and dedication ❤️
-Done with full effort and from the heart. ✅
+Developed as part of a React learning exercise to strengthen component reusability and prop handling skills.
