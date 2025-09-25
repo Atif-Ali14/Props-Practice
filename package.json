@@ -1,8 +1,9 @@
+
 {
   "name": "props-practice",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://easy2-code.github.io/Props-Practice-in-React",
+  "homepage": "https://github.com/Atif-Ali14/Props-Practice",
   "type": "module",
   "scripts": {
     "dev": "vite",

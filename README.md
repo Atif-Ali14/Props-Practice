@@ -124,7 +124,7 @@ In your `package.json`, add `predeploy` and `deploy` scripts:
 
 👉 (Optional but recommended) Also add a `homepage` field:
 
-"homepage": "https://easy2-code.github.io/Props-Practice-in-React"
+"homepage": "https://github.com/Atif-Ali14/Props-Practice"
 
 Like this:
 
@@ -132,7 +132,7 @@ Like this:
 "name": "props-practice",
 "private": true,
 "version": "0.0.0",
-"homepage": "https://easy2-code.github.io/Props-Practice-in-React",
+"homepage": "https://github.com/Atif-Ali14/Props-Practice",
 "type": "module",
 "scripts": {
 "dev": "vite",
@@ -174,7 +174,7 @@ This will push the contents of the `dist/` folder to a branch called `gh-pages`.
 
 After a few minutes, your app will be available at:
 
-👉 https://easy2-code.github.io/Props-Practice-in-React/ 🎉
+👉 https://github.com/Atif-Ali14/Props-Practice/ 🎉
 
 ✅ Notes
 

@@ -6,8 +6,8 @@ export default function Card({ title, description }) {
         border: "1px solid #ccc",
         borderRadius: "15px",
         padding: "20px",
-        margin: "15px",
-        backgroundColor: "#f9f9f9",
+        margin: "50px",
+        backgroundColor: "black",
         width: "250px",
       }}
     >

@@ -10,9 +10,9 @@ function App() {
 
       {/* Buttons with props */}
       <h2>Buttons</h2>
-      <Button text="Click Me" color="blue" />
-      <Button text="Delete" color="red" />
-      <Button text="Submit" color="green" />
+      <Button text="Click Me" color="#0496c7" />
+      <Button text="Delete" color="#99000d" />
+      <Button text="Submit" color="#90EE90" />
 
       {/* User Profiles */}
       <h2>User Profiles</h2>
@@ -22,13 +22,9 @@ function App() {
 
       {/* Cards */}
       <h2>Cards</h2>
-      <Card
-        title="React Basics" description="Learning how to use props and state."
-      />
+      <Card title="Bootstrap Basics" description="Learning how to apply css through bootstrap."/>
       <Card title="Advanced React" description="Hooks, Context, and more." />
-      <Card
-        title="Frontend Tools" description="Explore Vite, Tailwind, and libraries."
-      />
+      <Card title="Frontend Tools" description="Explore Vite, Tailwind, and libraries."/>
     </div>
   );
 }

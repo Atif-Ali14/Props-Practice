@@ -6,7 +6,7 @@ export default function UserProfile({ name, age, hobby }) {
         border: "1px solid #ddd",
         borderRadius: "10px",
         padding: "15px",
-        margin: "10px",
+        margin: "45px",
         width: "200px",
         textAlign: "center",
       }}

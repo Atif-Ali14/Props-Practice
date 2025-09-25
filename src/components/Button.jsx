@@ -9,7 +9,7 @@ export default function Button({ text, color }) {
         border: "none",
         borderRadius: "8px",
         cursor: "pointer",
-        margin: "8px",
+        margin: "45px",
       }}
     >
       {text}
